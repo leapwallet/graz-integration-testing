@@ -8,7 +8,7 @@
     "templates/*"
   ],
   "scripts": {
-    "build": "turbo run build --filter=!@project/example-vite",
+    "build": "turbo run build --filter=!@project/docs --filter=!@project/example-vite",
     "clean": "turbo run clean",
     "dev": "turbo run dev --filter=!@project/docs --filter=!@project/example-vite",
     "docs": "pnpm --dir docs",
@@ -30,6 +30,7 @@
     "husky": "^8.0.3",
     "p-map": "^6.0.0",
     "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
     "tsup": "^7.0.0",
     "turbo": "^1.10.3",
     "typescript": "^5.1.3"
